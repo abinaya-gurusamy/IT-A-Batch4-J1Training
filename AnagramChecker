@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String args[]) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a string  1: ");
+        String a = sc.nextLine();
+ 
+
+       System.out.print("Enter a string  2: ");
+        String b = sc.nextLine();
+
+        for (int i = 0; i < a.length(); i++) {
+            for (int j=0; j < a.length(); j++) {
+
+                if (a.charAt(i) == b.charAt(j)) {
+                   System.out.println("Anagram");
+                }
+                else{
+                    System.out.println(" not Anagram");
+ 
+                }
+            }
+        }
+    }
+}
+
+ 
